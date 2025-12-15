@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agung AI Assistant</title>
+    <!-- Font Awesome untuk Ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+          <div class="logo">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="title">
+            <h2>Agung AI</h2>
+            <span class="status">Online • Gemini 1.5 Flash</span>
+          </div>
+        </div>
+
+        <!-- Area Chat -->
+        <div id="chat-box" class="chat-box">
+          <div class="message bot">
+            <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+            <div class="content">
+              Halo! Saya Agung AI. Ada yang bisa saya bantu?
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+          <input
+            id="user-input"
+            type="text"
+            placeholder="Ketik pesan Anda di sini..."
+            autocomplete="off"
+          />
+          <button id="send-btn" onclick="sendMessage()">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Library untuk merapikan teks markdown dari AI -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
